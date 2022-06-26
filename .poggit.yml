@@ -1,0 +1,12 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/OiranCage/Symmetrica
+build-by-default: true
+branches:
+- main
+projects:
+  Symmetrica:
+    path: ""
+    libs:
+      - src: CortexPE/Commando/Commando
+        version: ^3.1
+        branch: master
+...
