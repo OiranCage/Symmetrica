@@ -23,6 +23,7 @@ class PointCommand extends BaseSubCommand{
 	 * @inheritDoc
 	 */
 	protected function prepare() : void{
+		$this->setPermission("symmetrica.command.symmetrica");
 		$this->registerArgument(0, new IntegerArgument("centerX", false));
 		$this->registerArgument(1, new IntegerArgument("centerZ", false));
 		$this->registerArgument(2, new BooleanArgument("shouldAddHalfBlockLength", false));

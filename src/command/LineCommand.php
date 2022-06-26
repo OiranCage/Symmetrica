@@ -22,6 +22,7 @@ class LineCommand extends BaseSubCommand{
 	 * @inheritDoc
 	 */
 	protected function prepare() : void{
+		$this->setPermission("symmetrica.command.symmetrica");
 		$this->registerArgument(0, new class("axis", false) extends StringEnumArgument{
 			protected const VALUES = [
 				"x" => Axis::X,
