@@ -12,5 +12,6 @@ class Main extends PluginBase{
 		$this->getServer()->getCommandMap()->registerAll("symmetrica", [
 			new SymmetricaCommand($this)
 		]);
+		$this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
 	}
 }
