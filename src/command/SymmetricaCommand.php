@@ -2,6 +2,7 @@
 
 namespace oirancage\symmetrica\command;
 
+use CortexPE\Commando\args\RawStringArgument;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\Plugin;
 
@@ -18,6 +19,7 @@ class SymmetricaCommand extends \CortexPE\Commando\BaseCommand{
 		$this->setPermission("symmetrica.command.symmetrica");
 		$this->registerSubCommand(new LineCommand());
 		$this->registerSubCommand(new PointCommand());
+		$this->registerSubCommand(new ClearCommand());
 	}
 
 	/**

@@ -18,4 +18,8 @@ class SessionStore{
 	public function store(string $name, SymmetryBlockPlace $session) : void{
 		$this->sessions[$name] = $session;
 	}
+
+	public function discard(string $name) : void{
+		unset($this->sessions[$name]);
+	}
 }
