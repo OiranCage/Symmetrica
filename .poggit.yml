@@ -8,4 +8,6 @@ projects:
     libs:
       - src: CortexPE/Commando/Commando
         vendor: raw
+        version: ^3.1
+        branch: master
 ...
