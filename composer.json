@@ -12,11 +12,12 @@
 	"require": {
 	},
 	"require-dev": {
-		"pocketmine/pocketmine-mp": "^4.5.1"
+		"pocketmine/pocketmine-mp": "^4.5.1",
+		"cortexpe/commando": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {
-			"oirancage\\symmetrica": "src"
+			"oirancage\\symmetrica\\": "src/"
 		}
 	}
 }
