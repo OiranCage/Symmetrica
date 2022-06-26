@@ -7,7 +7,6 @@ projects:
     path: ""
     libs:
       - src: CortexPE/Commando/Commando
-        vendor: raw
-        version: ^3.1
-        branch: master
+        version: ^3.0
+        branch: PM4
 ...
