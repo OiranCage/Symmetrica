@@ -2,6 +2,7 @@ name: Symmetrica
 main: oirancage\symmetrica\Main
 version: 1.0.0
 api: 4.0.0
+src-namespace-prefix: oirancage\symmetrica
 permissions:
   symmetrica.command.symmetrica:
     description: allows to use symmetrica command
