@@ -5,6 +5,7 @@ namespace oirancage\symmetrica\usecase;
 use InvalidArgumentException;
 use oirancage\symmetrica\transform\LineSymmetryTransform;
 use oirancage\symmetrica\utils\SymmetryBlockUtils;
+use oirancage\symmetrica\utils\WorldUtils;
 use pocketmine\block\Block;
 use pocketmine\math\Vector3;
 use pocketmine\world\Position;
@@ -28,6 +29,6 @@ class LineSymmetryBlockPlace implements SymmetryBlockPlace{
 		$symmetry->execute($transformedX, $transformedZ);
 		$transformedBlock = SymmetryBlockUtils::mirrorBlock($block, $this->axis);
 		$transformedPosition = new Vector3($transformedX, $position->y, $transformedZ);
-		$world->setBlock($transformedPosition, $transformedBlock);
+		WorldUtils::setBlockSafely($world, $transformedPosition, $transformedBlock);
 	}
 }
