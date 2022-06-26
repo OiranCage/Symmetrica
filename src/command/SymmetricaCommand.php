@@ -3,8 +3,13 @@
 namespace oirancage\symmetrica\command;
 
 use pocketmine\command\CommandSender;
+use pocketmine\plugin\Plugin;
 
 class SymmetricaCommand extends \CortexPE\Commando\BaseCommand{
+
+	public function __construct(Plugin $plugin){
+		parent::__construct($plugin, "symmetrica", "symmetrica command", []);
+	}
 
 	/**
 	 * @inheritDoc
