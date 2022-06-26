@@ -1,0 +1,22 @@
+{
+	"name": "oirancage/symmetrica",
+	"description": "symmetric building support plugin",
+	"minimum-stability": "stable",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "famima65536",
+			"email": "famima65536@gmail.com"
+		}
+	],
+	"require": {
+	},
+	"require-dev": {
+		"pocketmine/pocketmine-mp": "^4.5.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"oirancage\\symmetrica": "src"
+		}
+	}
+}
